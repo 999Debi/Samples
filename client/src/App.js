@@ -7,7 +7,7 @@ function App() {
   const [Data, setData] = useState({});
   const fetch = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:5000/data`);
+      const { data } = await axios.get(`data`);
       setData(data);
     } catch (error) {
       console.log(error);
